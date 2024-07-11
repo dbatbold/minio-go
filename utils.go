@@ -40,8 +40,8 @@ import (
 	"time"
 
 	md5simd "github.com/minio/md5-simd"
-	"github.com/minio/minio-go/v7/pkg/encrypt"
-	"github.com/minio/minio-go/v7/pkg/s3utils"
+	"github.com/dbatbold/minio-go/pkg/encrypt"
+	"github.com/dbatbold/minio-go/pkg/s3utils"
 	"github.com/minio/sha256-simd"
 )
 

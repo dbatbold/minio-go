@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/dbatbold/minio-go
 
 go 1.17
 

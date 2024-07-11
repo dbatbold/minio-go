@@ -82,10 +82,10 @@ func (c *Client) PutObjectFanOut(ctx context.Context, bucket string, fanOutData 
 	policy.SetExpires(time.Now().UTC().Add(15 * time.Minute))
 
 	// Set encryption headers if any.
-	policy.SetEncryption(fanOutReq.SSE)
+	//policy.SetEncryption(fanOutReq.SSE)
 
 	// Set checksum headers if any.
-	policy.SetChecksum(fanOutReq.Checksum)
+	//policy.SetChecksum(fanOutReq.Checksum)
 
 	url, formData, err := c.PresignedPostPolicy(ctx, policy)
 	if err != nil {

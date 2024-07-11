@@ -266,7 +266,7 @@ func (p *PostPolicy) SetChecksum(c Checksum) {
 	if c.IsSet() {
 		// Disabled for Cloudflare R2
 		//p.formData[amzChecksumAlgo] = c.Type.String()
-		p.formData[c.Type.Key()] = c.Encoded()
+		//p.formData[c.Type.Key()] = c.Encoded()
 	}
 }
 

@@ -264,7 +264,8 @@ func (p *PostPolicy) SetUserMetadata(key, value string) error {
 // SetChecksum sets the checksum of the request.
 func (p *PostPolicy) SetChecksum(c Checksum) {
 	if c.IsSet() {
-		p.formData[amzChecksumAlgo] = c.Type.String()
+		// Disabled for Cloudflare R2
+		//p.formData[amzChecksumAlgo] = c.Type.String()
 		p.formData[c.Type.Key()] = c.Encoded()
 	}
 }
